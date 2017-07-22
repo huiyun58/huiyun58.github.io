@@ -1,6 +1,6 @@
 .jumbotron {
     /* 設定背景顏色 */
-    background-color: #093489;
+    background-color: rgba(9, 164, 209, 0.93);
     /* 設定文字顏色 */
     color: white;
 }
@@ -12,4 +12,16 @@ img {
 
 body {
     background-color: lightblue;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
