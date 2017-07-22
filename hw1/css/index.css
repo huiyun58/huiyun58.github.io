@@ -9,3 +9,7 @@ img {
     display: block;
     margin: auto;
 }
+
+body {
+    background-color: lightblue;
+}
