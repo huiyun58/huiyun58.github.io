@@ -4,3 +4,8 @@
     /* 設定文字顏色 */
     color: white;
 }
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
