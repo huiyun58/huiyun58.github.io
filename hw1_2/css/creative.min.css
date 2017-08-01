@@ -476,3 +476,30 @@ img::-moz-selection {
     color: #fff;
     background: 0 0
 }
+
+.jumbotron {
+    /* 設定背景顏色 */
+    background - color: rgba(9, 164, 209, 0.93);
+    /* 設定文字顏色 */
+    color: white;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+body {
+    background - color: lightblue;
+}
+
+.btn - primary {
+    background - color: #a3a3a3;
+    border: none;
+    color: white;
+    padding: 9 px 16 px;
+    text - align: center;
+    text - decoration: none;
+    display: inline - block;
+    font - size: 16 px;
+}
