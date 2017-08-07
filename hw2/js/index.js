@@ -26,7 +26,25 @@ $('#query').on('click', function() {
     $.get("http://js2017-hw2.kchen.club/query", function(response) {
         if (response) {
             if (response.result) {
-                alert("Name: " + response.data[0].name + "\nPrice: " + response.data[0].price);
+
+                for (var i = 0; i < response.data.length - 5; i++) {
+                    var data2 = [
+                        response.data[i]._id,
+                        response.data[i].name,
+                        response.data[i].price,
+                        response.data[i].count,
+                        response.data[i].image
+                    ];
+
+
+
+
+                    $div = $('<div>').attr('class', 'item').append('<img class="thumb" src="' + data2[4] + '">' + '<h3 class="title">' + data2[1] + '</h3>' + '<p class="price">NT$' + data2[2] + '</p>');
+                    $col = $('<div>').attr('class', 'col-*').append($div);
+                    $('#product-list').attr('class', 'row justify-content-around').append($col);
+                    // alert("ID: " + data2[0] + "\nName: " + data2[1] + "\nPrice: " + data2[2] + "\nCount: " + data2[3] + "\nImg:" + data2[4]);
+                }
+
 
                 console.log(response.data[0].name);
 
