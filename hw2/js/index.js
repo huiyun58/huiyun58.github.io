@@ -7,7 +7,7 @@ $('#insert').on('click', function() {
             image: $('#InputProductImage').val()
         }
         // "http://js2017-hw2.kchen.club/insert"
-    $.post("https://huiyun58.github.io/hw2/insert.html", data, function(response) {
+    $.post("https://huiyun58.github.io/hw2/insert", data, function(response) {
         if (response) {
             if (response.result) {
                 $('#message').text('新增成功');
@@ -26,6 +26,7 @@ $('#query').on('click', function() {
     $.get("http://js2017-hw2.kchen.club/query", function(response) {
         if (response) {
             if (response.result) {
+                alert("Name: " + response.data[0].name + "\nPrice: " + response.data[0].price);
 
                 console.log(response.data[0].name);
 
