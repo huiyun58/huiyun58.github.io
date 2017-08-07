@@ -7,7 +7,7 @@ $('#insert').on('click', function() {
             image: $('#InputProductImage').val()
         }
         // "http://js2017-hw2.kchen.club/insert"
-    $.post("https://huiyun58.github.io/hw2/insert", data, function(response) {
+    $.post("http://js2017-hw2.kchen.club/insert", data, function(response) {
         if (response) {
             if (response.result) {
                 $('#message').text('新增成功');
